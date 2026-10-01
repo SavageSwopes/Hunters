@@ -8,10 +8,11 @@ extends CharacterBody3D
 @export var runSpeed = 3
 @export var sensitivity = 0.002
 
-@onready var head = $Rig_Medium
-@onready var camera = $Rig_Medium/Camera3D
+@onready var head: Node3D = $Rig_Medium
+@onready var camera: Camera3D = $Rig_Medium/Camera3D
 @onready var rangerHead = $Rig_Medium/Skeleton3D/Ranger_Head
 @onready var camera_origin = camera.position
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 #camera bob variables
 const bobFreq = 2.0
@@ -71,14 +72,17 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		#If the player is holding the run input and is grounded, then increase speed by the runSpeed
 		if Input.is_action_pressed("run") and is_on_floor():
+			# animation_player.play("Running_A")
 			velocity.x = direction.x * (speed + runSpeed)
 			velocity.z = direction.z * (speed + runSpeed)
 		else:
 			#else keep regular speed
+			animation_player.play("Walking_A")
 			velocity.x = direction.x * (speed)
 			velocity.z = direction.z * (speed)
 	else:
 		#Suppose to add friction but just stops the player
+		animation_player.play("T-Pose")
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
 	
