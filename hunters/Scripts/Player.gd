@@ -5,19 +5,22 @@ extends CharacterBody3D
 @export var speed = 5.0
 @export var jump_velocity = 4
 @export var half_jump = 0.5
-@export var runSpeed = 3
+@export var runSpeed = 2
 @export var sensitivity = 0.002
 
 @onready var head: Node3D = $Rig_Medium
 @onready var camera: Camera3D = $Rig_Medium/Camera3D
 @onready var rangerHead = $Rig_Medium/Skeleton3D/Ranger_Head
-@onready var camera_origin = camera.position
+@onready var camera_origin: Vector3 = camera.position
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 #camera bob variables
 const bobFreq = 2.0
 const bobAmp = 0.08
+const BASE_FOV = 75.0
+const FOV_CHANGE = 1.2
 var _bob = 0
+
 #Camera position
 
 func _ready():
@@ -32,7 +35,7 @@ func _unhandled_input(event):
 		#Rotates the camera 
 		head.rotate_y(-event.relative.x * sensitivity)
 		camera.rotate_x(-event.relative.y * sensitivity)
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 		
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -87,10 +90,12 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, speed)
 	
 	#head bob
-	_bob += delta * velocity.length() * float(is_on_floor())
-	camera.transform.origin = _headbob(_bob)
-	
-	
+	#_bob += delta * velocity.length() * float(is_on_floor())
+	#camera.position = _headbob(_bob)
+	#FOV
+	var velocity_clamped = clamp(velocity.length(), 0.5, speed * 2)
+	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
+	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
 	move_and_slide()
 
 func _headbob(time) -> Vector3:

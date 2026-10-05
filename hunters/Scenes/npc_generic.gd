@@ -73,3 +73,7 @@ func get_new_target():
 	current_destination = destinations_array.pick_random()
 	navigation_agent_3d.target_position = current_destination.global_position
 	
+
+#The npc got as close to the target as it could
+func _on_navigation_agent_3d_navigation_finished() -> void:
+	_set_state(NPCState.Idle)
