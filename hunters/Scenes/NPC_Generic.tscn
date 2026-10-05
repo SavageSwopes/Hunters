@@ -2229,7 +2229,10 @@ _data = {
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_636on"]
 radius = 0.5703125
-height = 2.0516815
+height = 1.2040825
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o4xan"]
+size = Vector3(0.84936523, 0.7819214, 0.9785156)
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1043306249]
 collision_layer = 4
@@ -2446,13 +2449,19 @@ skeleton = NodePath("..")
 libraries/ = SubResource("AnimationLibrary_ovlaw")
 autoplay = &"T-Pose"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=337688569]
-transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0.9132205, 0)
+[node name="Body" type="CollisionShape3D" parent="." unique_id=337688569]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0.531801, 0)
 shape = SubResource("CapsuleShape3D_636on")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1437836318]
+path_height_offset = 0.5
 
 [node name="IdleTimer" type="Timer" parent="." unique_id=1591301191]
 wait_time = 2.0
 
+[node name="Head" type="CollisionShape3D" parent="." unique_id=1078133039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027972594, 1.3878541, -0.0107421875)
+shape = SubResource("BoxShape3D_o4xan")
+
+[connection signal="navigation_finished" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
 [connection signal="timeout" from="IdleTimer" to="." method="_on_idle_timer_timeout"]
