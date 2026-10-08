@@ -39,21 +39,21 @@ func _set_state(new_state:NPCState) -> void:
 	match current_state:
 		NPCState.Idle:
 			animation_player.play("T-Pose")
-			idle_timer.start(1.0 + randf())
+			idle_timer.start(2.0 + randf())
 		NPCState.Walking:
 			animation_player.play("Walking_A")
 
 func _physics_process(delta: float) -> void:
 		match current_state:
 			NPCState.Idle:
-				pass
+				animation_player.play("T-Pose")
 			NPCState.Walking:
 				#Sets the next path possible equal to the navigation agent 3ds next position
 				var next_path_pos:Vector3 = navigation_agent_3d.get_next_path_position()
 				var new_velocity:Vector3 = global_position.direction_to(next_path_pos) * speed
 				velocity = new_velocity
 				#Make npc look forward
-				var look_at_target:Vector3 = Vector3(next_path_pos.x, global_position.y, next_path_pos.y)
+				var look_at_target:Vector3 = Vector3(next_path_pos.x, global_position.y, next_path_pos.z)
 				if not global_position.is_equal_approx(look_at_target):
 					look_at(look_at_target)
 				move_and_slide()
