@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dkqemi3fc4ipl"]
+
+[ext_resource type="PackedScene" uid="uid://cptad3n0aejlm" path="res://Models/Player Models/Superhero_Male_FullBody.gltf" id="1_qb6uk"]
+
+[node name="Superhero_Male_FullBody" unique_id=1236741720 instance=ExtResource("1_qb6uk")]
