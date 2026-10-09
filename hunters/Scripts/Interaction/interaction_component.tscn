@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bv00d4uga1nrt"]
+
+[ext_resource type="Script" uid="uid://snwwmnbrteu5" path="res://Scripts/Interaction/interaction_component.gd" id="1_trwld"]
+
+[node name="InteractionComponent" type="Node" unique_id=230557199]
+script = ExtResource("1_trwld")

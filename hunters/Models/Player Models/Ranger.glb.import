@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cptad3n0aejlm"
-path="res://.godot/imported/Superhero_Male_FullBody.gltf-abf067d64ba7ec59d62c74d9efb773fc.scn"
+uid="uid://bs0rsa38a2wcv"
+path="res://.godot/imported/Ranger.glb-13c71cba1aa2bc9606cd6578839864d7.scn"
 
 [deps]
 
-source_file="res://Models/Player Models/Superhero_Male_FullBody.gltf"
-dest_files=["res://.godot/imported/Superhero_Male_FullBody.gltf-abf067d64ba7ec59d62c74d9efb773fc.scn"]
+source_file="res://Models/Player Models/Ranger.glb"
+dest_files=["res://.godot/imported/Ranger.glb-13c71cba1aa2bc9606cd6578839864d7.scn"]
 
 [params]
 
@@ -39,14 +39,7 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"nodes": {
-"PATH:Armature/Skeleton3D": {
-"retarget/bone_map": Object(BoneMap,"resource_local_to_scene":false,"resource_name":"","profile":null,"bonemap":null,"script":null)
-
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1

@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxuipu37k5n1h"
-path.s3tc="res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"
+uid="uid://bxlbdn7y6dvi5"
+path.s3tc="res://.godot/imported/glock_pewfinal_color.png-8ab1668e3b8a037677cefffa18acaa66.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "21dc9f97e9057c7018b08f724904f0a2"
+}
 
 [deps]
 
-source_file="res://Textures/Player Textures/T_Superhero_Male_Dark.png"
-dest_files=["res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"]
+source_file="res://Models/Weapon Models/Glock Models/glock_pewfinal_color.png"
+dest_files=["res://.godot/imported/glock_pewfinal_color.png-8ab1668e3b8a037677cefffa18acaa66.s3tc.ctex"]
 
 [params]
 

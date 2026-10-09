@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nktlm772ts8m"
-path.s3tc="res://.godot/imported/Rogue_Hooded_rogue_texture.png-1f3ad7fbce76f3f90d64d58bd9ae5223.s3tc.ctex"
+uid="uid://diapvny7cvvqo"
+path.s3tc="res://.godot/imported/Sniper and Bullet_bulletsnipermat_normal.png-d6fe61d9e57daedb86d022684051f186.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "e24a3d2f6e39f79ab8c3dab2f3ab950f"
+"md5": "77df8c84a76cb4541fa24961f156cd30"
 }
 
 [deps]
 
-source_file="res://Models/Rogue_Hooded_rogue_texture.png"
-dest_files=["res://.godot/imported/Rogue_Hooded_rogue_texture.png-1f3ad7fbce76f3f90d64d58bd9ae5223.s3tc.ctex"]
+source_file="res://Models/Weapon Models/Sniper Models/Sniper and Bullet_bulletsnipermat_normal.png"
+dest_files=["res://.godot/imported/Sniper and Bullet_bulletsnipermat_normal.png-d6fe61d9e57daedb86d022684051f186.s3tc.ctex"]
 
 [params]
 
@@ -25,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://Models/Weapon Models/Sniper and Bullet_bulletsnipermat_normal.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cptad3n0aejlm"
-path="res://.godot/imported/Superhero_Male_FullBody.gltf-abf067d64ba7ec59d62c74d9efb773fc.scn"
+uid="uid://7ln1vsae3akh"
+path="res://.godot/imported/Male_Peasant.gltf-68c4c250fe34773152a5b566bd0fb9d3.scn"
 
 [deps]
 
-source_file="res://Models/Player Models/Superhero_Male_FullBody.gltf"
-dest_files=["res://.godot/imported/Superhero_Male_FullBody.gltf-abf067d64ba7ec59d62c74d9efb773fc.scn"]
+source_file="res://Models/Player Models/Player Clothes/Male_Peasant.gltf"
+dest_files=["res://.godot/imported/Male_Peasant.gltf-68c4c250fe34773152a5b566bd0fb9d3.scn"]
 
 [params]
 
@@ -42,8 +42,7 @@ materials/extract_path=""
 _subresources={
 "nodes": {
 "PATH:Armature/Skeleton3D": {
-"retarget/bone_map": Object(BoneMap,"resource_local_to_scene":false,"resource_name":"","profile":null,"bonemap":null,"script":null)
-
+"retarget/bone_map": Resource("uid://cva065duvcjd2", "res://Textures/Player Textures/new_bone_map.tres")
 }
 }
 }

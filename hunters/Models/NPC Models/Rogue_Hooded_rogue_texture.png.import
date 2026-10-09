@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxuipu37k5n1h"
-path.s3tc="res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"
+uid="uid://nktlm772ts8m"
+path.s3tc="res://.godot/imported/Rogue_Hooded_rogue_texture.png-9952c9b036904d77a12a3e9bfaf692b6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "e24a3d2f6e39f79ab8c3dab2f3ab950f"
+}
 
 [deps]
 
-source_file="res://Textures/Player Textures/T_Superhero_Male_Dark.png"
-dest_files=["res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"]
+source_file="res://Models/NPC Models/Rogue_Hooded_rogue_texture.png"
+dest_files=["res://.godot/imported/Rogue_Hooded_rogue_texture.png-9952c9b036904d77a12a3e9bfaf692b6.s3tc.ctex"]
 
 [params]
 

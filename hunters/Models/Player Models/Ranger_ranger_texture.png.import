@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxuipu37k5n1h"
-path.s3tc="res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"
+uid="uid://g8vko3804iko"
+path.s3tc="res://.godot/imported/Ranger_ranger_texture.png-e2db5a24603ff6eed6b1205c8cbed6b9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "cce0a8fd41d7db9bef78ccb560e9500d"
+}
 
 [deps]
 
-source_file="res://Textures/Player Textures/T_Superhero_Male_Dark.png"
-dest_files=["res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"]
+source_file="res://Models/Player Models/Ranger_ranger_texture.png"
+dest_files=["res://.godot/imported/Ranger_ranger_texture.png-e2db5a24603ff6eed6b1205c8cbed6b9.s3tc.ctex"]
 
 [params]
 

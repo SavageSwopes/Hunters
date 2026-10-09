@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxuipu37k5n1h"
-path.s3tc="res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"
+uid="uid://s5ecqkaukxao"
+path.s3tc="res://.godot/imported/Sniper and Bullet_snipermat_normal.png-4bb56ccca38a96059e2f91bae80f567b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "1deb141029250ba07ec9bf6109319314"
+}
 
 [deps]
 
-source_file="res://Textures/Player Textures/T_Superhero_Male_Dark.png"
-dest_files=["res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"]
+source_file="res://Models/Weapon Models/Sniper Models/Sniper and Bullet_snipermat_normal.png"
+dest_files=["res://.godot/imported/Sniper and Bullet_snipermat_normal.png-4bb56ccca38a96059e2f91bae80f567b.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://Models/Weapon Models/Sniper and Bullet_snipermat_normal.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

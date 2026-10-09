@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxuipu37k5n1h"
-path.s3tc="res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"
+uid="uid://blfyn7o2dyi65"
+path.s3tc="res://.godot/imported/Sniper and Bullet_bulletsnipermat_color.png-41cbbaa690ab866fba09de727c5334d4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "110cbc783fc5d08979f3b7caf5176036"
+}
 
 [deps]
 
-source_file="res://Textures/Player Textures/T_Superhero_Male_Dark.png"
-dest_files=["res://.godot/imported/T_Superhero_Male_Dark.png-25279b64e4a9433d33354c30e6cc8272.s3tc.ctex"]
+source_file="res://Models/Weapon Models/Sniper Models/Sniper and Bullet_bulletsnipermat_color.png"
+dest_files=["res://.godot/imported/Sniper and Bullet_bulletsnipermat_color.png-41cbbaa690ab866fba09de727c5334d4.s3tc.ctex"]
 
 [params]
 

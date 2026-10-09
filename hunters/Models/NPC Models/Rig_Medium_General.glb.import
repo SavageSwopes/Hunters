@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="animation_library"
 importer_version=1
-type="PackedScene"
-uid="uid://bs0rsa38a2wcv"
-path="res://.godot/imported/Ranger.glb-4deb9276d4c59d2d22556c752a2f06d6.scn"
+type="AnimationLibrary"
+uid="uid://refef50fmdmn"
+path="res://.godot/imported/Rig_Medium_General.glb-3953bc526c33aa0c8cab159007815914.res"
 
 [deps]
 
-source_file="res://Models/Ranger.glb"
-dest_files=["res://.godot/imported/Ranger.glb-4deb9276d4c59d2d22556c752a2f06d6.scn"]
+source_file="res://Models/NPC Models/Rig_Medium_General.glb"
+dest_files=["res://.godot/imported/Rig_Medium_General.glb-3953bc526c33aa0c8cab159007815914.res"]
 
 [params]
 

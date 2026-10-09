@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dju0rmdwehowu"]
 
-[ext_resource type="PackedScene" uid="uid://dmu07ltsuodyy" path="res://Models/Rig_Medium_MovementBasic.glb" id="1_e516d"]
+[ext_resource type="PackedScene" uid="uid://dmu07ltsuodyy" path="res://Models/NPC Models/Rig_Medium_MovementBasic.glb" id="1_e516d"]
 
 [node name="Rig_Medium_MovementBasic" unique_id=1945611129 instance=ExtResource("1_e516d")]
 
