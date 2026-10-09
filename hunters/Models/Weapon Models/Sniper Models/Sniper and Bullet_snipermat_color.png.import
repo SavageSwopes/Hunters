@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g8vko3804iko"
-path.s3tc="res://.godot/imported/Ranger_ranger_texture.png-8274dc48b6120f303558f14a4a09c870.s3tc.ctex"
+uid="uid://532omth6qqq3"
+path.s3tc="res://.godot/imported/Sniper and Bullet_snipermat_color.png-9fc9ea6c19f95c756173d9f9842578dc.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "cce0a8fd41d7db9bef78ccb560e9500d"
+"md5": "9ff378f0b3a5e482e9410710944e3662"
 }
 
 [deps]
 
-source_file="res://Models/Ranger_ranger_texture.png"
-dest_files=["res://.godot/imported/Ranger_ranger_texture.png-8274dc48b6120f303558f14a4a09c870.s3tc.ctex"]
+source_file="res://Models/Weapon Models/Sniper Models/Sniper and Bullet_snipermat_color.png"
+dest_files=["res://.godot/imported/Sniper and Bullet_snipermat_color.png-9fc9ea6c19f95c756173d9f9842578dc.s3tc.ctex"]
 
 [params]
 

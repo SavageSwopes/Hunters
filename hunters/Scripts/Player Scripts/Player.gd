@@ -23,7 +23,7 @@ var crouch
 
 
 @onready var head: Node3D = $RootNode
-@onready var camera: Camera3D = $RootNode/Camera3D
+@onready var camera: Camera3D = $RootNode/PlayerCamera
 @onready var camera_origin = camera.transform.origin
 @onready var camera_running: Vector3 = Vector3(-0.004, 1.648, -0.197)
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -31,6 +31,9 @@ var crouch
 @onready var standing_collision: CollisionShape3D = $StandingCollision
 @onready var crouching_collision: CollisionShape3D = $CrouchingCollision
 @onready var crawling_collision: CollisionShape3D = $CrawlingCollision
+@onready var interactionController: Node = %InteractionController
+
+
 
 #Player Settings
 @export var base_fov: float = 85
@@ -50,6 +53,7 @@ enum PlayerState
 	IDLE_STAND,
 	IDLE_CROUCH,
 	IDLE_CRAWL,
+	IDLE_HOLDING,
 	CROUCHING, 
 	CRAWLING,
 	WALKING,
@@ -143,10 +147,10 @@ func updatePlayerState() -> void:
 	if not is_on_floor():
 		player_state = PlayerState.AIR
 	else:
-		if Input.is_action_just_pressed("crawl"):
-			is_crawling = !is_crawling
-			is_crouching = false
-		elif Input.is_action_pressed("crouch"):
+		#if Input.is_action_just_pressed("crawl"):
+		#	is_crawling = !is_crawling
+		#	is_crouching = false
+		if Input.is_action_pressed("crouch"):
 			is_crouching = true
 			is_crawling = false
 		elif not Input.is_action_just_pressed("crouch") and !is_crawling:
@@ -166,8 +170,12 @@ func updatePlayerState() -> void:
 		elif !standing_check.is_colliding():
 			if !is_crawling:
 				if not is_moving:
-					player_state = PlayerState.IDLE_STAND
-					animation_player.play("CharacterArmature|Idle")
+					if interactionController.currentObject != null:
+						player_state = PlayerState.IDLE_HOLDING
+						animation_player.play("CharacterArmature|Idle_Gun_Pointing")
+					else:
+						player_state = PlayerState.IDLE_STAND
+						animation_player.play("CharacterArmature|Idle")
 				elif Input.is_action_pressed("run"):
 					player_state = PlayerState.RUNNING
 					animation_player.play("CharacterArmature|Run")
@@ -187,7 +195,7 @@ func updatePlayerColShape(_player_state: PlayerState) -> void:
 		elif _player_state == PlayerState.CROUCHING or _player_state == PlayerState.IDLE_CROUCH:
 			standing_collision.set_deferred("disabled", true)
 			crouching_collision.set_deferred("disabled", false)
-			crawling_collision.set_deferred("disabled", true	)
+			crawling_collision.set_deferred("disabled", true)
 		else:
 			standing_collision.set_deferred("disabled", false)
 			crouching_collision.set_deferred("disabled", true)

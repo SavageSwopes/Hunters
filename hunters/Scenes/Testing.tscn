@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cn4uofu4p30qr"]
 
 [ext_resource type="PackedScene" uid="uid://b18j53oi82onf" path="res://Scenes/NPC_Generic.tscn" id="2_50pdt"]
+[ext_resource type="PackedScene" uid="uid://s7lu4nbtupy7" path="res://Scenes/Weapons/Glock/glock.tscn" id="3_4y0hx"]
 [ext_resource type="PackedScene" uid="uid://dbsmw7j584bs6" path="res://Scenes/player.tscn" id="3_8e680"]
+[ext_resource type="PackedScene" uid="uid://cg20moss56tvb" path="res://Scenes/cube_5_kg.tscn" id="4_4y0hx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_axi3y"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -122,3 +124,9 @@ size = Vector3(1, 3, 1.6)
 
 [node name="Player2" parent="." unique_id=919157450 instance=ExtResource("3_8e680")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0.6, -1)
+
+[node name="Glock" parent="." unique_id=105320558 instance=ExtResource("3_4y0hx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.808132, 0.66090685, 0.11973238)
+
+[node name="Cube_5kg" parent="." unique_id=861419899 instance=ExtResource("4_4y0hx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -7)

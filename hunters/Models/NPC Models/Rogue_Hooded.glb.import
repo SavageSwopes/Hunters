@@ -1,15 +1,15 @@
 [remap]
 
-importer="animation_library"
+importer="scene"
 importer_version=1
-type="AnimationLibrary"
-uid="uid://refef50fmdmn"
-path="res://.godot/imported/Rig_Medium_General.glb-94cc22193a67b9b076a4c7e780694eb6.res"
+type="PackedScene"
+uid="uid://cdin8hk0f43jv"
+path="res://.godot/imported/Rogue_Hooded.glb-837d9bf5afc7d3eed5cc7ec3db4e7969.scn"
 
 [deps]
 
-source_file="res://Models/Rig_Medium_General.glb"
-dest_files=["res://.godot/imported/Rig_Medium_General.glb-94cc22193a67b9b076a4c7e780694eb6.res"]
+source_file="res://Models/NPC Models/Rogue_Hooded.glb"
+dest_files=["res://.godot/imported/Rogue_Hooded.glb-837d9bf5afc7d3eed5cc7ec3db4e7969.scn"]
 
 [params]
 

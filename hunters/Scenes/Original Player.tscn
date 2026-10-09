@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dtwj3nanm210l"]
 
-[ext_resource type="Script" uid="uid://85n6lwt6k3f1" path="res://Scripts/Player.gd" id="1_6t5aa"]
-[ext_resource type="Texture2D" uid="uid://g8vko3804iko" path="res://Models/Ranger_ranger_texture.png" id="2_cvnsp"]
+[ext_resource type="Script" uid="uid://85n6lwt6k3f1" path="res://Scripts/Player Scripts/Player.gd" id="1_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://g8vko3804iko" path="res://Models/Player Models/Ranger_ranger_texture.png" id="2_cvnsp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5od4i"]
 resource_name = "ranger"
